@@ -32,4 +32,8 @@ export class AuthService {
       httpOptions
     );
   }
+
+  getRole(){
+    return this.http.get(AUTH_API + 'get_roles');
+  }
 }
